@@ -1,11 +1,11 @@
 import { useStore } from '@nanostores/react'
 
-import { $counter, increaseCounter } from './store/counter'
-import reactLogo from './assets/react.svg'
+import { $counter, increaseCounter } from '../../app/store/counter'
+import reactLogo from '/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
+import './hello.css'
 
-function App() {
+function Hello() {
   const counter = useStore($counter)
 
   return (
@@ -22,7 +22,7 @@ function App() {
       <div className="card">
         <button onClick={increaseCounter}>count is {counter}</button>
         <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+          Edit <code>src/components/hello/hello.tsx</code> and save to test HMR
         </p>
       </div>
       <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
@@ -30,4 +30,4 @@ function App() {
   )
 }
 
-export default App
+export default Hello
