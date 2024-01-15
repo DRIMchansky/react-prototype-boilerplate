@@ -1,12 +1,12 @@
-import { useStore } from "@nanostores/react";
+import { useStore } from '@nanostores/react'
 
-import { $counter, increaseCounter } from "./store/counter";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import { $counter, increaseCounter } from './store/counter'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
 
 function App() {
-  const counter = useStore($counter);
+  const counter = useStore($counter)
 
   return (
     <>
@@ -25,11 +25,9 @@ function App() {
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
