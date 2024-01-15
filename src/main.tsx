@@ -1,11 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
-import App from './components/hello/hello.tsx'
+import { Hello } from './components/hello'
 import './app/global.css'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <App />
+    <Hello />
   </React.StrictMode>
 )
